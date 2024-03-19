@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" onsubmit="return checkAge()">
+        <div style="width: 50%; margin: 0 auto;">
+            <fieldset
+                style="margin: 0 auto; width: fit-content; text-align: center;display: flex; flex-direction: column;">
+                <legend>A propos des css</legend>
+                <p>Savez-vous ce que veut dire CSS?</p>
+                <div style="display: inline;">
+                    <input type="radio" name="css_knowledge" value="oui" required> <label for="oui">oui</label>
+                    <input type="radio" name="css_knowledge" value="non"> <label for="non">non</label>
+                </div>
+                <br>
+                <p>Si oui, les utilisez-vous plutôt</p>
+                <select name="usage" id="usage" style="width:100%;" required>
+                    <option value="toujours">toujours</option>
+                    <option value="parfois">parfois</option>
+                    <option value="jamais">jamais</option>
+                </select>
+                <!-- Additions for Q2 -->
+                <br>
+                <label for="nom">Votre nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                <br>
+                <label for="prenom">Votre prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+                <br>
+                <label for="birthdate">Date de naissance :</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset style="margin: 0 auto; width: fit-content; text-align: center;">
+                <legend>Vos Coordonnées</legend>
+                <label>Votre email</label>
+                <input type="email" name="email" required>
+                <br>
+                <label for="">Votre commentaires</label>
+                <br>
+                <textarea name="commentaires" id="textarea" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <br>
+            <div style="text-align: center;">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </div>
+    </form>
+
+
+    <script src="tp3.js">
+        
+    </script>
+</body>
+
+</html>
